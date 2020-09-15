@@ -52,15 +52,16 @@
       const nums3 = [2, 1222, 3444, 7254, 83.04444, 1111]; // should be 2186
       const nums4 = [2, 1222,'sneeze', 3444, 7254, 8, 'abacus']; //should be 1734
 // 4.  Choose all the companies that started after 2000 and sort them ascending
+
     let businesses = [
-    { company: 'Amex', startYear: 2000 },
-    { company: 'Chase', startYear: 1998 },
-    { company: 'Citibank', startYear: 2010 },
-    { company: 'BOA', startYear: 1980 },
-    { company: 'TD', startYear: 2001 },
-    { company: 'Mastercard', startYear: 2011 },
-    { company: 'VISA', startYear: 2000 }
-    ];
+             { company: 'VISA', startYear: 2000 },
+            { company: 'Chase', startYear: 1998 },
+            { company: 'BOA', startYear: 1980 },
+            { company: 'Amex', startYear: 2000 },
+            { company: 'TD', startYear: 2001 },
+            { company: 'Mastercard', startYear: 2011 },
+            { company: 'Citibank', startYear: 2010 },
+            ];
 
 // 5.  COMPUTE INTEGERS
 
