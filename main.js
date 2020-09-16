@@ -2,6 +2,12 @@
 //     b. Using reduce subtract all of the numbers in the array from an initial number 200
     let numbers = [12, 3, 5, 3, 5, 4]
 
+let difference = numbers.reduce(function(passedIn, item){
+    return passedIn - item
+}, 200)
+
+console.log(difference)
+
 // 2.  Add 500 to each bottle of red wine, then add all the red wine bottles together. Use all three methods we learned today and use method chaining.
     let data = [
     {
