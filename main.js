@@ -48,6 +48,16 @@ console.log(difference)
     }
     ];
 
+    //find all the red wine, add 500 to them
+    //add all red and white wines
+    let x = data.filter((allWine) => allWine.ineColor === "red")
+  .map((wine) => {
+    wine.numBottles += 500;
+    return wine;
+  })
+
+  console.log(x)
+
 // 3.  Just Averages
 //     - Using reduce, return an integer value for the average of all the index values and/or calculated values in an array.
 //     - If the Value is a String, use the character Code number for the first letter in the String.
