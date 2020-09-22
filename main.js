@@ -70,15 +70,25 @@ const nums2 = [11.12, 43, 56.22, 78, 98, 11]; // should be 49
 const nums3 = [2, 1222, 3444, 7254, 83.04444, 1111]; // should be 2186
 const nums4 = [2, 1222, 'sneeze', 3444, 7254, 8, 'abacus']; //should be 1734
 
-// function justAverages(array){
-//     array.reduce((a, b) => a + b, 0) / array.length;
-// }
-// console.log(justAverages(nums1))
+//'solution'
+function justAverages(array){
+    if(array !== ''){
+  return Math.floor(array.reduce((a, b) => a + b, 0) / array.length);
+    }
+    return array.charCodeAt(0)
+    
+}
+console.log('s'.charCodeAt(0) )
+//testing
+console.log(justAverages(nums1));
+console.log(justAverages(nums2));
+console.log(justAverages(nums3));
+console.log(justAverages(nums4));
 
-let average1 = Math.floor(nums1.reduce((total,current)=> total + current, 0) / nums1.length);
-// let average2 = nums2.reduce((total, current) => total + current / nums2.length);
+// let average1 = Math.floor(nums1.reduce((total,current)=> total + current, 0) / nums1.length);
+// let average2 = Math.floor(nums2.reduce((total, current) => total + current,average1) / nums2.length);
 
-console.log(average1)
+// console.log(average1)
 // console.log(average2)
 
 // 4.  Choose all the companies that started after 2000 and sort them ascending
