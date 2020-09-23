@@ -141,7 +141,14 @@ console.log(sortStart)
 //       [1,2,3,4] should be [5,10,15,20]
 //       [1,2,undefined,6] should be [5,10,30]
 //       [1,3,25.5,4,32.9] should be [5,15,20]
-
+// let arr = [1, 2, 3,4]
+let arr = [1, 2, undefined, 6]
+//should be whole numbers and an actual number
+//if not skip it
+ function byFive(arr){  
+     return arr.filter((value) => value > 0 ).map((val) => val * 5)
+}
+console.log(byFive(arr))
 // 6.
 
 // - Count the number times the same element value appears in an array and display your answer in an object with the element as the key and the number of times as the value
