@@ -129,6 +129,11 @@ let businesses = [{
 ];
 
 
+// function sortStart(company){
+let sortStart =businesses.filter((company) => company.startYear > 2000).sort((comp1,comp2)=>comp1.startYear - comp2.startYear)
+
+console.log(sortStart)
+
 
 // 5.  COMPUTE INTEGERS
 
