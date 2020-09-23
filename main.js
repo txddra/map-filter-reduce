@@ -58,7 +58,7 @@ let x = data.filter((allWine) => allWine.ineColor === "red")
     })
 
 //testing
-console.log(x)
+// console.log(x)
 
 // 3.  Just Averages
 //     - Using reduce, return an integer value for the average of all the index values and/or calculated values in an array.
@@ -74,11 +74,16 @@ const nums4 = [2, 1222, 'sneeze', 3444, 7254, 8, 'abacus']; //should be 1734
 function justAverages(array){
     if(array !== ''){
   return Math.floor(array.reduce((a, b) => a + b, 0) / array.length);
+   //need help with trying to convert the string
+    
     }
-    return array.charCodeAt(0)
+   
+   
+ return array = array.charCodeAt(0) 
     
 }
-console.log('s'.charCodeAt(0) )
+
+// console.log(array.charCodeAt(0) )
 //testing
 console.log(justAverages(nums1));
 console.log(justAverages(nums2));
