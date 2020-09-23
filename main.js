@@ -165,9 +165,12 @@ const arr2 = [3, 1, 2, 5, 2, 5, 7, 5] // should be { '1': 1, '2': 2, '3': 1, '5'
 
 function getOccurrence(array, value) {
     let count = 0;
-    array.forEach((v) => (v === value && count++));
+    array.forEach((v) => (v === value && count++).reduce((value)=>{
+
+    }
+    ));
     return`${value}: ${count}` ;
 }
 
-console.log(getOccurrence(arr1,5,3 ,2));  // 2
+console.log(getOccurrence(arr1,5));  // 2
 console.log(getOccurrence(arr1, 3));
