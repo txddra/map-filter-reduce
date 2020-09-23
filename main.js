@@ -75,7 +75,7 @@ function justAverages(array){
     if(array !== ''){
   return Math.floor(array.reduce((a, b) => a + b, 0) / array.length);
    //need help with trying to convert the string
-    
+    //learned about the 'charCodeAt' method, but not enough
     }
    
    
@@ -141,14 +141,18 @@ console.log(sortStart)
 //       [1,2,3,4] should be [5,10,15,20]
 //       [1,2,undefined,6] should be [5,10,30]
 //       [1,3,25.5,4,32.9] should be [5,15,20]
-// let arr = [1, 2, 3,4]
-let arr = [1, 2, undefined, 6]
+let arrA = [1, 2, 3, 4]
+let arrB = [1, 2, undefined, 6];
+let arrC =  [1, 3, .5, 4, 32.9];
 //should be whole numbers and an actual number
 //if not skip it
+//learned that if you want to skip something when mapping through an array, just filter it first
  function byFive(arr){  
-     return arr.filter((value) => value > 0 ).map((val) => val * 5)
+     return arr.filter((value) => value > 0 && value % 1===0).map((val) => val * 5)
 }
-console.log(byFive(arr))
+console.log(byFive(arrA));
+console.log(byFive(arrB));
+console.log(byFive(arrC));
 // 6.
 
 // - Count the number times the same element value appears in an array and display your answer in an object with the element as the key and the number of times as the value
@@ -158,3 +162,12 @@ console.log(byFive(arr))
 // - The value in the object property should be the number of times a value appears in the original array.
 const arr1 = [5, 3, 2, 5, 6]; //should be {'5':2,'3':1,'2':1,'6':1}
 const arr2 = [3, 1, 2, 5, 2, 5, 7, 5] // should be { '1': 1, '2': 2, '3': 1, '5': 3, '7': 1 }
+
+function getOccurrence(array, value) {
+    let count = 0;
+    array.forEach((v) => (v === value && count++));
+    return`${value}: ${count}` ;
+}
+
+console.log(getOccurrence(arr1,5,3 ,2));  // 2
+console.log(getOccurrence(arr1, 3));
